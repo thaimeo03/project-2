@@ -56,6 +56,7 @@ a {
 .fixed {
     position: sticky;
     top: -32px;
+    z-index: 1;
 }
 
 .header .content {
@@ -130,13 +131,147 @@ a {
     border-radius: 20px;
 }
 
-.hero .info {
+.hero .box-layer {
+    position: relative;
+}
+
+.hero .box-course {
+    position: absolute;
+    bottom: 48px;
+    left: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    background: #ffffff;
+    width: 270px;
+    padding: 24px;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+.hero .box-course .course-item {
+    display: flex;
+    align-items: center;
+}
+
+.hero .box-course .course-item .icon {
+    width: 48px;
+    height: 48px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: #fff9e8;
+    border-radius: 50%;
+}
+
+.hero .box-course .course-item .course {
+    margin-left: 16px;
+}
+
+.hero .course span {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: var(--light-color);
+}
+
+.hero .course .name-course a {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: var(--bold-color);
+}
+
+.hero .info {
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .hero .box-center {
     width: 470px;
     max-width: 470px;
+}
+
+.hero .title {
+    font-family: "Sen", sans-serif;
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: var(--bold-color);
+}
+
+.hero .desc {
+    margin-top: 22px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: var(--light-color);
+}
+
+.hero .box-action {
+    margin-top: 38px;
+    display: flex;
+}
+
+.hero .cta {
+    width: 180px;
+    min-height: 64px;
+    padding: 23px;
+    font-size: 1.8rem;
+    background: var(--primary-color);
+    border-radius: 32px;
+}
+
+.hero .play {
+    margin-left: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.hero .play img {
+    padding: 14px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+}
+
+.hero .play img:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.hero .play span {
+    margin-left: 14px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: var(--bold-color);
+}
+
+.hero .engagement {
+    margin-top: 48px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: var(--light-color);
+}
+
+.hero .box-qty {
+    margin-top: 16px;
+    display: flex;
+    gap: 28px;
+}
+
+.hero .box-qty .qty {
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: var(--light-color);
+}
+
+.hero .box-qty .qty span {
+    font-family: "Sen", sans-serif;
+    padding-right: 12px;
+    font-weight: 700;
+    font-size: 4.4rem;
+    color: var(--bold-color);
 }
